@@ -21,7 +21,8 @@ RUN	apt-get install -y nmap
 RUN	apt-get install -y traceroute
 
 # 3) install packages
-RUN conda install --yes geopandas babypandas
+RUN conda install --yes geopandas
+RUN conda install --yes babypandas
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
